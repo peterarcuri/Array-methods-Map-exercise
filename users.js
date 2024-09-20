@@ -6,7 +6,7 @@ const users = [
 
 const newUser = users.map(function(user) {
 	return {
-		fullName: `${users.firstName} ${users.lastName}`,
+		fullName: `${user.firstName} ${user.lastName}`,
 		membershipStatus: user.points > 100 ? "Premium" : "Standard"
 	};
 });
